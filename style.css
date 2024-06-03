@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+body{
+	background: url(bg.jpg);
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+
+.contac-link-row1{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.per-contac-cover{
+	background-size: cover;
+	width: 250px;
+	height: 230px;
+	border-radius: 30px;
+	align-content: center;
+}
+
+.per-contac-cover a{
+	text-decoration: none;
+	color: white;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.contac-whatsapp-cover{
+	background-color: #32d851;
+}
+
+.contac-telegram-cover{
+	margin-left: 40px;
+	background-color: #29aaec;
+}
+
+.contac-wechat-cover{
+	margin-left: 40px;
+	background-color: #32d851;
+}
+
+.upper-wor-tekan{
+	font-size: 16px;
+	color: red;
+}
+
+.per-contac-cover img{
+	height: 130px;
+	width: auto;
+}
+
+.contac-row1-word{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contac-row2-all-cover{
+	margin-top: 10px;
+}
+
+.contac-row2-per{
+	background-color: transparent;
+	width: 830px;
+	height: 66px;
+	border-radius: 30px;
+	border: 3px solid black;
+	margin-top: 20px;
+	align-content: center;
+}
+
+.contac-row2-per a{
+	text-decoration: none;
+}
+
+.contac-row2-container-cover{
+	display: flex;
+	justify-content: left;
+}
+
+.contac-row2-left{
+	margin-left: 2px;
+	background-size: cover;
+}
+
+.contac-row2-left img{
+	width: 60px;
+	height: auto;
+}
+
+.contac-row2-right{
+	background-size: cover;
+	width: 100%;
+	align-content: center;
+}
+
+.contac-row2-wordi{
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+	color: black;
+}
+
+.contac-row2-per:hover{
+	background-color: #fbbc04;
+}
+
+.row1-pic-set{
+	margin-top: 30px;
+}
+
+.row2-pic-set{
+	margin-top: 10px;
+}
+
+.promotion-all-cover img{
+	width: auto;
+	height: 250px;
+	border-radius: 20px;
+}
+
+.pic-second{
+	margin-left: 10px;
+}
+
+.footer-div-rebate{
+	margin-bottom: 20px;
+}
+
+.footer-full-page{
+	margin-bottom: 100px;
+}
