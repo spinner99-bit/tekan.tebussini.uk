@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Element/Bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.full-page-cover{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.top-logo{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid white;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+.top-logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top-container h2{
+    margin-top: 5px;
+}
+
+#formModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.modal-content {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-content img{
+    width: 100%;
+    height: auto;
+}
+
+.modal-content h2{
+    font-size: 24px;
+    color: yellow;
+    margin-top: 10px;
+}
+
+.modal-content form{
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-content label{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    justify-self: center;
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+}
+
+.modal-content input, .modal-content select{
+    width: 100%;
+    padding: 2px 5px;
+    text-align: center;
+    justify-self: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+}
+
+.daftar-bottom-btn-cover{
+    display: flex;
+    justify-content: space-between;
+}
+
+.daftar-bottom-btn-cover a{
+    text-decoration: none;
+}
+
+.daftar-bottom-btn-cover button{
+    padding: 7px 15px;
+    background-color: yellow;
+    font-weight: 900;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.daftar-bottom-btn-cover i{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.link-cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 按钮之间的间距 */
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+    padding: 5px;
+    font-weight: 900;
+    background: yellow;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:nth-child(even){
+    background: yellow;
+}
+
+.shake-button {
+    animation: pulse 3s infinite;
+    background: yellow;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* 初始和结束状态为正常大小 */
+    }
+    50% {
+        transform: scale(1.1); /* 中间状态放大 */
+    }
+}
+
+.button:hover {
+    background: white;
+    color: red;
+}
+
+.button i {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .button{
+        width: 300px;
+    }
+}
+
+
+section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.per-swiper-div img {
+    width: 500px; /* 确保图片充满滑块 */
+    height: 500px;
+}
+
+.swiper-slide-active {
+    transform: scale(5); /* 活动的滑块放大一些，制造更强的3D效果 */
+}
+
+@media (max-width: 768px) {
+    .per-swiper-div img{
+        width: 210px;
+        height: 210px;
+    }
+}
+
+footer{
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.2);
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+footer label{
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.marquee {
+    overflow-x: auto; /* 启用水平滚动 */
+    white-space: nowrap; /* 防止换行 */
+    width: 100%; /* 可根据需要调整宽度 */
+    position: relative; /* 使子元素定位 */
+    cursor: grab; /* 鼠标悬停时显示手型 */
+    margin-top: 10px;
+}
+
+.marquee2 {
+    overflow-x: auto; /* 启用水平滚动 */
+    white-space: nowrap; /* 防止换行 */
+    width: 100%; /* 可根据需要调整宽度 */
+    position: relative; /* 使子元素定位 */
+    cursor: grab; /* 鼠标悬停时显示手型 */
+    margin-top: 10px;
+}
+
+.marquee::-webkit-scrollbar {
+    display: none; /* 隐藏Chrome和Safari中的滚动条 */
+}
+
+.marquee2::-webkit-scrollbar {
+    display: none; /* 隐藏Chrome和Safari中的滚动条 */
+}
+
+.marquee-content {
+    display: inline-block; /* 确保内容在一行显示 */
+}
+
+.marquee img {
+    height: 50px; /* 可根据需要调整高度 */
+    margin: 0 5px; /* 图片间距 */
+    filter: grayscale(1);
+}
+
+.marquee2 img {
+    height: 60px; /* 可根据需要调整高度 */
+    margin: 0; /* 图片间距 */
+    filter: grayscale(1);
+}
+
+.marquee img:hover{
+    filter: grayscale(0);
+}
+
+.marquee::-webkit-scrollbar-thumb {
+    background-color: #888; /* 滚动条颜色 */
+    border-radius: 10px; /* 滚动条圆角 */
+}
+
+.marquee::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* 滚动条悬停时颜色 */
+}
