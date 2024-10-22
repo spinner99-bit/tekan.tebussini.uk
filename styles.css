@@ -284,6 +284,10 @@ footer label{
     filter: grayscale(0);
 }
 
+.marquee2 img:hover{
+    filter: grayscale(0);
+}
+
 .marquee2::-webkit-scrollbar-thumb {
     background-color: yellow;
     border-radius: 10px;
