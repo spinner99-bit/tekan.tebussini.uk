@@ -240,3 +240,13 @@ function startAutoScroll() {
 
 // 在页面加载时启动空闲计时器
 restartIdleTimer();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname;
+
+    // 检查路径是否以 .html 结尾
+    if (currentPath.endsWith('.html')) {
+        const newPath = currentPath.slice(0, -5);
+        history.replaceState(null, '', newPath);
+    }
+});
