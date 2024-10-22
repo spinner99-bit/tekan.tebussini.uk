@@ -231,7 +231,8 @@ footer{
 }
 
 footer label{
-    color: white;
+    color: yellow;
+    font-weight: 900;
     font-size: 20px;
     padding: 0 20px;
 }
